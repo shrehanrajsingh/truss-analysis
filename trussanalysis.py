@@ -210,6 +210,10 @@ for i in truss:
 
     plt.plot(x, y, marker='o', linestyle='--')
 
+print("[ DEFORMATIONS ]")
+
+print(U_sol)
+
 scale = 1e5
 # deformed members
 for i in truss:
