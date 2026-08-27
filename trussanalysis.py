@@ -147,8 +147,6 @@ for i in joint_map:
 
 # Now, we find those entries for which we have U != 0
 idxs = [x for x in range(len(U)) if U[x]]
-print(U)
-print(idxs)
 
 aug = []
 for i in idxs:
@@ -196,12 +194,7 @@ def gauss_jordan(A):
     return A
 
 
-for i in aug:
-    print(i)
 r = gauss_jordan(aug)
-
-for i in r:
-    print(i)
 
 U_sol = [0 for _ in range(2 * len(joint_map))]
 
